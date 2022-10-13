@@ -1,0 +1,138 @@
+.content_dd {
+    margin-left: 60px;
+}
+
+.content_dd .iten {
+    float: left;
+    width: 410px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 30px;
+    background-color: #fff;
+}
+
+.iten>img {
+    margin-top: 40px;
+}
+
+.content_dd p {
+    margin: 50px 20px;
+    font-size: 16px;
+}
+
+.content_dd .footer {
+    width: 381px;
+    height: 102px;
+    margin-left: 8px;
+    border-radius: 15px;
+}
+
+.message {
+    width: 1097px;
+    height: 1459px;
+    border-radius: 15px;
+    margin: 450px 0 0 60px;
+    background-color: #fff;
+}
+
+.box_top {
+    position: relative;
+    float: left;
+    margin: 40px;
+}
+
+.box_top h1 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.box_top h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #969ba0;
+}
+
+.box_top .tab {
+    position: absolute;
+    top: 15px;
+    left: 850px;
+    width: 120px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 15px;
+    background-color: #f1f2f5;
+}
+
+.tab i {
+    margin-left: 30px;
+}
+
+.message .content1 {
+    position: relative;
+    width: 1097px;
+    height: 1184px;
+    top: 150px;
+    left: 30px;
+    /* background-color: cadetblue; */
+}
+
+.main1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1057px;
+    height: 206px;
+    /* background-color: burlywood; */
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.main_l p {
+    font-size: 16px;
+    margin: 20px 0 0 75px;
+}
+
+.main_r img {
+    position: absolute;
+    top: 25px;
+    left: 900px;
+}
+
+.main2 {
+    position: absolute;
+    top: 236px;
+    left: 0;
+    width: 1057px;
+    height: 206px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.main3 {
+    position: absolute;
+    top: 496px;
+    left: 0;
+    width: 1057px;
+    ;
+    height: 206px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.box {
+    position: relative;
+    top: -1460px;
+    left: 1180px;
+    width: 339px;
+    height: 625px;
+    text-align: center;
+    line-height: 625px;
+}
+
+.box img {
+    position: absolute;
+    top: -11px;
+    left: -23px;
+}
