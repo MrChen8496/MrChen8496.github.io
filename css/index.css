@@ -60,6 +60,7 @@
     left: 850px;
     width: 120px;
     height: 48px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
     line-height: 48px;
@@ -68,11 +69,12 @@
 }
 
 .tab i {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
-.message .content {
+.message .content1 {
     position: relative;
+    width: 1097px;
     height: 1184px;
     top: 150px;
     left: 30px;
@@ -81,6 +83,8 @@
 
 .main1 {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 1057px;
     height: 206px;
     /* background-color: burlywood; */
@@ -103,7 +107,6 @@
     top: 236px;
     left: 0;
     width: 1057px;
-    ;
     height: 206px;
     border-bottom: 1px solid #f1f1f1;
 }

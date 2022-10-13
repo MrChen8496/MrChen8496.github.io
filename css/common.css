@@ -208,11 +208,12 @@ header {
 }
 
 .content {
-    position: relative;
+
+    /* position: relative;
     top: 30px;
-    left: 360px;
-    width: 1564px;
-    margin-left: 10px;
+    left: 360px; */
+    width: 1920px;
+    padding: 30px 0 0 360px;
 }
 
 .content_top {
@@ -239,12 +240,20 @@ header {
 .month {
     position: relative;
     top: -50px;
-    left: 800px;
+    left: 1100px;
+    width: 295px;
+    height: 68px;
+}
+
+.month img {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .month input {
     position: absolute;
     top: 40px;
-    left: 325px;
+    left: 70px;
     background-color: #f4f5f9;
 }
