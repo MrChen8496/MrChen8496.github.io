@@ -1,0 +1,505 @@
+/* banner区域CSS */
+.banner {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner ul {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  display: flex;
+  justify-content: center;
+}
+.banner ul li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  float: left;
+  margin-left: 20px;
+}
+.banner ul li:nth-child(1) {
+  background-color: #fff;
+}
+/* 段落内容样式 */
+.section {
+  padding-top: 75px;
+  background: url(/img/section.png) no-repeat 50% / cover;
+}
+.section .img,
+.office .topimg,
+.section1 .topimg,
+.section2 .topimg {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.section .tab {
+  display: flex;
+  justify-content: space-between;
+}
+/* 左tab */
+.section .tabL {
+  max-width: 100%;
+  flex-grow: 0;
+}
+.section .tabL ul li {
+  height: 155px;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.section .tabL ul li:hover {
+  background: linear-gradient(
+    320deg,
+    #1c5bac 31%,
+    #1c5bac 0,
+    #1fb6c4 88%,
+    #1fb6c4 0
+  );
+  /* 文字颜色设为透明，设置层叠样式到文字下面 */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section .tabL ul li:hover img {
+  left: 0;
+}
+.section .tabL ul li img {
+  position: absolute;
+  top: 80%;
+  left: -60px;
+  transition: all 0.5s;
+}
+.section .tabL ul li div:nth-child(1) {
+  font-size: 30px;
+  border-bottom: 20px;
+}
+.section .tabL ul li div:nth-child(2) {
+  font-size: 20px;
+}
+/* 右tab */
+.section .tabR {
+  width: 730px;
+  height: 1005px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  flex-grow: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section .tabR > a {
+  position: relative;
+  width: 365px;
+  height: 201px;
+  overflow: hidden;
+}
+.section .tabR > a::after {
+  transition: all 0.3s;
+  position: absolute;
+  content: "";
+  z-index: 1;
+  opacity: 0.8;
+  background: linear-gradient(
+    rgba(51, 51, 51, 0),
+    rgba(51, 51, 51, 0.5),
+    rgba(51, 51, 51, 1)
+  );
+  height: 60%;
+  /* top: 60%; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.section .tabR > a:hover::after {
+  height: 70%;
+  opacity: 1;
+}
+.section .tabR > a:hover img {
+  scale: 1.1;
+}
+.section .tabR > a img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+.section .tabR > a span {
+  font-size: 25px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  color: #fff;
+  z-index: 2;
+}
+/* 办公内容CSS样式 */
+.office {
+  background-color: #fff;
+  padding-top: 40px;
+}
+.office .topimg span,
+.office .content > span,
+.section2 .topimg span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+}
+.office .office-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.office .office-list a {
+  display: block;
+  overflow: hidden;
+  height: 348px;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 15px;
+  position: relative;
+}
+.office .office-list span,
+.office .office-list p {
+  z-index: 2;
+}
+.office .office-list a::after {
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    transparent,
+    #001f35 94%,
+    #001f35 0
+  );
+  position: absolute;
+  left: 0;
+  top: 20%;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+.office .office-list a:hover::after {
+  opacity: 0.8;
+  top: 0;
+  background: linear-gradient(
+    327deg,
+    #1c5bac 31%,
+    #1c5bac 0,
+    #1fb6c4 96%,
+    #1fb6c4 0
+  );
+}
+.office .office-list a:nth-child(1) {
+  width: 714px;
+}
+.office .office-list a:nth-child(2) {
+  width: 470px;
+}
+.office .office-list a:nth-child(3) {
+  width: 592px;
+}
+.office .office-list a:nth-child(4) {
+  width: 592px;
+}
+.office .office-list a:nth-child(5) {
+  width: 592px;
+}
+.office .office-list a:nth-child(6) {
+  width: 592px;
+}
+.office .office-list a:nth-child(n + 7) {
+  width: 389px;
+}
+.office .office-list .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* background-size: cover; */
+  /* 元素框内对齐方式 */
+  object-fit: cover;
+}
+.office .office-list a span {
+  display: block;
+  position: absolute;
+  bottom: 36px;
+  left: 30px;
+  font-size: 25px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.office .office-list a p {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  left: 30px;
+  bottom: -100px;
+  transition: all 0.3s;
+}
+.office .office-list .img2 {
+  position: absolute;
+  z-index: 2;
+  width: 58px;
+  height: 15px;
+  bottom: -100px;
+  left: 30px;
+  transition: all 0.3s;
+}
+.office .office-list a:hover span {
+  bottom: 145px;
+}
+.office .office-list a:hover p {
+  bottom: 98px;
+}
+.office .office-list a:hover .img2 {
+  bottom: 50px;
+}
+/* .office .office-list a:nth-child(2):hover p{
+    bottom: 48px;
+  } */
+.office .content > span {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  line-height: 50px;
+  text-align: center;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+.office .content > span:hover {
+  color: #027efb;
+}
+.office .content > span::before {
+  border-left: 1px solid #027efb;
+  border-bottom: 1px solid #027efb;
+}
+.office .content > span::after {
+  border-top: 1px solid #027efb;
+  border-right: 1px solid #027efb;
+}
+/* 生活列表CSS样式 */
+.section1,
+.section2 {
+  background-color: #fff;
+  padding-top: 40px;
+}
+.section1 .topimg span,
+.section1 .content > span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+}
+.section1 .office-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 .office-list a {
+  display: block;
+  overflow: hidden;
+  height: 348px;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 15px;
+  position: relative;
+}
+.section1 .office-list a::after {
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(180deg, transparent, #001f35);
+  position: absolute;
+  left: 0;
+  top: 20%;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+/*
+.office .office-list a:hover::after{
+  opacity: .8;
+  top: 0;
+  background: linear-gradient(327deg,#1c5bac 31%,#1c5bac 0,#1fb6c4 96%,#1fb6c4 0)
+}
+*/
+.section1 .office-list a:nth-child(1) {
+  width: 714px;
+}
+.section1 .office-list a:nth-child(2) {
+  width: 470px;
+}
+.section1 .office-list a:nth-child(3) {
+  width: 592px;
+}
+.section1 .office-list a:nth-child(4) {
+  width: 592px;
+}
+.section1 .office-list a:nth-child(5) {
+  width: 592px;
+}
+.section1 .office-list a:nth-child(6) {
+  width: 592px;
+}
+.section1 .office-list a:nth-child(n + 7) {
+  width: 389px;
+}
+.section1 .office-list .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* background-size: cover; */
+  /* 元素框内对齐方式 */
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.section1 .office-list a span {
+  display: block;
+  position: absolute;
+  bottom: 45px;
+  left: 30px;
+  font-size: 25px;
+  color: #fff;
+  z-index: 2;
+}
+.section1 .office-list a p {
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  z-index: 2;
+}
+.section1 .office-list a:hover img {
+  filter: blur(10px);
+}
+.section1 .content > span {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #000;
+  line-height: 50px;
+  text-align: center;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+.section1 .content > span:hover {
+  color: #027efb;
+}
+/*
+.office .office-list .img2{
+  position: absolute;
+  z-index: 2;
+  width: 58px;
+  height: 15px;
+  bottom: -100px;
+  left: 30px;
+  transition: all .3s;
+}
+.office .office-list a:hover span{
+  bottom: 145px;
+}
+.office .office-list a:hover p{
+  bottom: 98px;
+}
+.office .office-list a:hover .img2{
+  bottom: 50px;
+}
+.office .office-list a:nth-child(2):hover p{
+  bottom: 48px;
+}
+
+.office .content>span:hover{
+  color: #027efb;
+}
+.office .content>span::before{
+  border-left: 1px solid #027efb;
+  border-bottom: 1px solid #027efb;
+}
+.office .content>span::after{
+  border-top: 1px solid #027efb;
+  border-right: 1px solid #027efb;
+} */
+/* 数字化内容CSS样式 */
+.section2 {
+  background: url(/img/数字化背景.png) no-repeat center 150px / cover;
+}
+.section2 .section2-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+.section2 .section2-list a {
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #666;
+  position: relative;
+}
+.section2 .section2-list .box1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  padding: 30px;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+.section2 .section2-list .box2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    346deg,
+    #1c5bac 28%,
+    #1c5bac 0,
+    #1fb6c4 124%,
+    #1fb6c4 0
+  );
+  opacity: 1;
+  overflow: hidden;
+  padding: 30px;
+  left: 0;
+  top: 380px;
+  color: #fff;
+  transition: all 0.3s;
+}
+.section2 .section2-list .box1 img,
+.section2 .section2-list .box2 img {
+  width: 340px;
+  height: 220px;
+  /* display: block; */
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.section2 .section2-list a > div > div {
+  font-size: 25px;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 0 0 16px;
+  padding: 0 0 15px;
+}
+.section2 .section2-list a:hover .box1 {
+  top: -380px;
+}
+.section2 .section2-list a:hover .box2 {
+  top: 0;
+}

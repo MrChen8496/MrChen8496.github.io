@@ -1,0 +1,50 @@
+.history-list {
+    background: url(../img/P3-1.png)no-repeat top, url(../img/P3-2.png) no-repeat bottom;
+    padding: 65px 0 336px 0;
+    overflow: hidden;
+    background-size: 100%;
+}
+
+.history-list .item-left {
+    background: url(../img/P3-left.png)no-repeat;
+    padding-right: calc(50% + 50px);
+    text-align: right;
+    background-size: 100%;
+}
+
+.history-list .item-right {
+    background: url(../img/P3-right.png)no-repeat;
+    padding-left: calc(50% + 50px);
+    text-align: left;
+    background-size: 100%;
+}
+
+.history-list .item-left h3,
+.history-list .item-right h3 {
+    font-size: 28px;
+    color: #2e2e2e;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+.history-list .item-left div {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+    line-height: 21px;
+    padding-bottom: 20px;
+    max-width: 300px;
+    text-align: justify;
+    float: right;
+}
+
+.history-list .item-right div {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+    line-height: 21px;
+    padding-bottom: 20px;
+    max-width: 300px;
+    text-align: justify;
+    float: left;
+}

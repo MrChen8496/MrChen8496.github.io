@@ -1,0 +1,58 @@
+.banner-3 .left {
+  width: 50%;
+  height: 490px;
+  float: left;
+  background: url(../img/P4left.jpg);
+  background-position: 100%;
+  position: relative;
+}
+.banner-3 .right {
+  width: 50%;
+  height: 490px;
+  float: right;
+  background: url(../img/P4right.jpg) no-repeat;
+  background-position: 100%;
+  position: relative;
+}
+.banner-3 .content {
+  /* width: 330px; */
+  position: absolute;
+  top: 180px;
+  right: 117px;
+}
+.banner-3 .top {
+  font-size: 30px;
+  position: relative;
+}
+.banner-3 .top::after {
+  position: absolute;
+  content: "";
+  /* width: 240px; */
+  height: 1px;
+  top: 50%;
+  left: 75px;
+  background-color: #666;
+}
+.banner-3 .middle {
+  background: url(../img/P4+.png) no-repeat 100%;
+  width: 22px;
+  height: 22px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.banner-3 .bottom {
+  font-size: 14px;
+  color: #333;
+}
+.banner-3 .right .content {
+  color: #fff;
+  top: 180px;
+  left: 117px;
+}
+.banner-3 .right .top::after {
+  background-color: #fff;
+}
+.banner-3 .right .bottom {
+  font-size: 14px;
+  color: #fff;
+}

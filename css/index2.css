@@ -1,0 +1,60 @@
+/* 公司介绍内容CSS样式 */
+.section-1 {
+  padding: 70px 35px 80px 30px;
+}
+
+.section-1 .container .left {
+  float: left;
+  font-size: 16px;
+}
+.section-1 .container .left h3 {
+  font-weight: 800;
+  color: #666;
+  margin-bottom: 15px;
+}
+.section-1 .container .left li {
+  position: relative;
+  color: #999;
+  padding-left: 30px;
+  line-height: 30px;
+}
+.section-1 .container .left li::before {
+  content: "·";
+  position: absolute;
+  left: 5px;
+  color: #00b3d9;
+  font-weight: 900;
+}
+.section-1 .container .right {
+  width: 468px;
+  height: 340px;
+  float: right;
+  background: url(../img/P2bgc1.png);
+}
+/* 讯飞简介CSS */
+.about .container h3 {
+  font-size: 42px;
+  color: #dedede;
+  margin-left: 450px;
+  margin-top: 90px;
+  letter-spacing: 4px;
+}
+.about .container .about-1 {
+  margin-left: 450px;
+}
+.about .container {
+  overflow: hidden;
+  background-image: url(../img/P2about.png);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 430px auto;
+  padding-bottom: 40px;
+}
+.about .container .about-1 p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 2;
+  text-indent: 2rem;
+  letter-spacing: 1.1px;
+  text-align: justify;
+}

@@ -1,0 +1,21 @@
+.banner-4 .list > div {
+  border-bottom: 1px dotted #999;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.banner-4 .list a {
+  width: 1040px;
+}
+.banner-4 .list a div:first-child {
+  font-size: 18px;
+  margin-top: 30px;
+}
+.banner-4 .list a div:first-child:hover {
+  color: #00bbe4;
+}
+.banner-4 .list a div:last-child {
+  font-size: 16px;
+  color: #666;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
